@@ -39,6 +39,7 @@ include_once(XOOPS_ROOT_PATH."/modules/smartobject/class/smartobjecthandler.php"
 class SmartProfileProfile extends SmartObject {
     function SmartProfileProfile($fields) {
         $this->initVar('profileid', XOBJ_DTYPE_INT, null, true);
+        $this->initVar('newemail', XOBJ_DTYPE_TXTBOX);
         $this->init($fields);
     }
 

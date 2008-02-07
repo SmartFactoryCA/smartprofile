@@ -242,8 +242,8 @@ function getRegisterForm(&$user, $profile, $next_step = 0, $step) {
     $action = $_SERVER['REQUEST_URI'];
     global $xoopsModuleConfig;
     include_once XOOPS_ROOT_PATH."/class/xoopsformloader.php";
-
-    $reg_form = new XoopsThemeForm($step->getVar('step_name'), "regform", $action, "post");
+	include_once XOOPS_ROOT_PATH."/modules/smartprofile/class/forms/smartprofile_form.php";
+    $reg_form = new SmartProfileForm($step->getVar('step_name'), "regform", $action, "post");
 
     if ($step->getVar('step_intro') != "") {
         $reg_form->addElement(new XoopsFormLabel('', $step->getVar('step_intro')));

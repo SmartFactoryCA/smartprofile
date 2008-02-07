@@ -57,7 +57,7 @@ else {
             $xoopsMailer->assign("ADMINMAIL", $xoopsConfig['adminmail']);
             $xoopsMailer->assign("SITEURL", XOOPS_URL."/");
             $xoopsMailer->assign("IP", $_SERVER['REMOTE_ADDR']);
-            $xoopsMailer->assign("NEWEMAIL_LINK", XOOPS_URL."/modules/smartprofile/changemail.php?key=".$key."&oldmail=".$xoopsUser->getVar('email'));
+            $xoopsMailer->assign("NEWEMAIL_LINK", XOOPS_URL."/modules/smartprofile/changemail.php?code=".$key."&oldmail=".$xoopsUser->getVar('email'));
             $xoopsMailer->assign("NEWEMAIL", $_POST['newmail']);
             $xoopsMailer->setToEmails($_POST['newmail']);
             $xoopsMailer->setFromEmail($xoopsConfig['adminmail']);
@@ -65,9 +65,10 @@ else {
             $xoopsMailer->setSubject(sprintf(_PROFILE_MA_NEWEMAILREQ,$xoopsConfig['sitename']));
             if ($xoopsMailer->send()) {
                 //set proposed email as the user's newemail
-                $xoopsUser->setVar('newemail', $_POST['newmail']);
-                $member_handler =& xoops_gethandler('member');
-                if ($member_handler->insertUser($xoopsUser)) {
+               	$profile_handler = xoops_getmodulehandler('profile', 'smartprofile');
+               	$profile = $profile_handler->get($xoopsUser->getVar('uid'));
+                $profile->setVar('newemail', $_POST['newmail']);
+                if ($profile_handler->insert($profile)) {
                     //redirect with success
                     redirect_header(XOOPS_URL.'/', 2, _PROFILE_MA_NEWMAILMSGSENT);
                 }
@@ -82,8 +83,10 @@ else {
         //check unique key
         $code = isset($_GET['code']) ? $_GET['code'] : redirect_header(XOOPS_URL, 2, _PROFILE_MA_CONFCODEMISSING);
         if ($code == $key) {
-            //change email address to the proposed one
-            $xoopsUser->setVar('email', $xoopsUser->getVar('newemail', 'n'));
+            //change email address to the proposed on
+            $profile_handler = xoops_getmodulehandler('profile', 'smartprofile');
+           	$profile = $profile_handler->get($xoopsUser->getVar('uid'));
+            $xoopsUser->setVar('email', $profile->getVar('newemail'));
             //update user data
             $member_handler =& xoops_gethandler('member');
             if ($member_handler->insertUser($xoopsUser, true)) {

@@ -174,7 +174,7 @@ switch ( $op ) {
     default:
         include_once 'include/forms.php';
         $reg_form =& getRegisterForm($newuser, $profile, 0, $steps[0]);
-        assign($reg_form, $xoopsTpl);
+        assign($reg_form, &$xoopsTpl);
         $xoopsTpl->assign('current_step', 0);
         break;
 }
@@ -279,17 +279,9 @@ function assign($form, $tpl) {
         }
         $i++;
     }
-    /*
-     * hack by felix
-     * Make work js validation
-     */
-    $js = $form->renderValidationJS2();
+
+    $js = $form->renderValidationJS();//var_dump($form->getName());exit;
     $tpl->assign($form->getName(), array('title' => $form->getTitle(), 'name' => $form->getName(), 'action' => $form->getAction(),  'method' => $form->getMethod(), 'extra' => 'onsubmit="return xoopsFormValidate_'.$form->getName().'(this);"'.$form->getExtra(), 'javascript' => $js, 'elements' => $elements));
-    //$js = $form->renderValidationJS();
-    //$tpl->assign($form->getName(), array('title' => $form->getTitle(), 'name' => $form->getName(), 'action' => $form->getAction(),  'method' => $form->getMethod(), 'extra' => 'onsubmit="return xoopsFormValidate_'.$form->getName().'();"'.$form->getExtra(), 'javascript' => $js, 'elements' => $elements, 'requiredcount' => count($required)));
-	/*
-     * End of hack by felix
-     * Make work js validation
-     */
+
 }
 ?>

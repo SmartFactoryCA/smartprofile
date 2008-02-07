@@ -91,4 +91,8 @@ define("_PROFILE_MI_SHOWEMPTY_DESC", "If set to 'no', fields without a value wil
 define("_PROFILE_MI_PAGE_INFO", "User Info");
 define("_PROFILE_MI_PAGE_EDIT", "Edit User");
 define("_PROFILE_MI_PAGE_SEARCH", "Search");
+
+//blocks
+define("_MI_SPROFILE_BLOCK_NEW_MEMBERS", "New members");
+define("_MI_SPROFILE_BLOCK_NEW_MEMBERS_DSC", "Recently subscribed members");
 ?>

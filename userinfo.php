@@ -30,9 +30,14 @@ include 'header.php';
 include_once XOOPS_ROOT_PATH . '/modules/system/constants.php';
 
 $uid = intval($_GET['uid']);
+
 if ($uid <= 0) {
-    header('location: '.XOOPS_URL);
-    exit();
+	if(is_object($xoopsUser)){
+		$uid = $xoopsUser->getVar('uid');
+	}else{
+		header('location: '.XOOPS_URL);
+		exit();
+	}
 }
 
 $gperm_handler = & xoops_gethandler( 'groupperm' );

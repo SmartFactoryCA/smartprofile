@@ -63,6 +63,16 @@ if ($xoopsUser) {
 }
 
 $modversion['sqlfile']['mysql'] = "sql/mysql.sql";
+$i =1;
+
+$modversion['blocks'][$i]['file'] = "smartprofile_newmembers.php";
+$modversion['blocks'][$i]['name'] = _MI_SPROFILE_BLOCK_NEW_MEMBERS;
+$modversion['blocks'][$i]['description']	= _MI_SPROFILE_BLOCK_NEW_MEMBERS_DSC;
+$modversion['blocks'][$i]['show_func'] = "b_smartprofile_newmembers_show";
+$modversion['blocks'][$i]['edit_func'] = "b_smartprofile_newmembers_edit";
+$modversion['blocks'][$i]['options']	= "10|1";
+$modversion['blocks'][$i]['template'] = 'smartprofile_block_newusers.html';
+
 
 // Tables created by sql file (without prefix!)
 $modversion['tables'][1] = "smartprofile_category";
