@@ -231,6 +231,60 @@ $modversion['config'][21]['formtype'] = 'yesno';
 $modversion['config'][21]['valuetype'] = 'int';
 $modversion['config'][21]['default'] = 0;
 $modversion['config'][21]['category'] = 'settings';
+$i = 22;
+$modversion['config'][$i]['name'] = 'perpage';
+$modversion['config'][$i]['title'] = '_MI_SPROFILE_PERPAGE';
+$modversion['config'][$i]['description'] = '_MI_SPROFILE_PERPAGE_DSC';
+$modversion['config'][$i]['formtype'] = 'select';
+$modversion['config'][$i]['valuetype'] = 'text';
+$modversion['config'][$i]['default'] = 'all';
+$modversion['config'][$i]['category'] = 'settings';
+$modversion['config'][$i]['options'] = array(5  => '5',
+										10  => '10',
+										15  => '15',
+                                   		25   => '25',
+                                   		50  => '50',
+                                   		100   => '100',
+                                  		 _MI_SPROFILE_ALL => 'all');
+//real name disp
+$i++;
+$modversion['config'][$i]['name'] = 'index_real_name';
+$modversion['config'][$i]['title'] = '_PROFILE_MI_REALNAME';
+$modversion['config'][$i]['description'] = '_PROFILE_MI_REALNAME_DESC';
+$modversion['config'][$i]['formtype'] = 'yesno';
+$modversion['config'][$i]['valuetype'] = 'int';
+$modversion['config'][$i]['default'] = 0;
+$modversion['config'][$i]['category'] = 'settings';
+
+//avatar disp
+$i++;
+$modversion['config'][$i]['name'] = 'index_avatar';
+$modversion['config'][$i]['title'] = '_PROFILE_MI_AVATAR_INDEX';
+$modversion['config'][$i]['description'] = '_PROFILE_MI_AVATAR_INDEX_DESC';
+$modversion['config'][$i]['formtype'] = 'yesno';
+$modversion['config'][$i]['valuetype'] = 'int';
+$modversion['config'][$i]['default'] = 1;
+$modversion['config'][$i]['category'] = 'settings';
+
+//avatar height
+$i++;
+$modversion['config'][$i]['name'] = 'index_avatar_height';
+$modversion['config'][$i]['title'] = '_PROFILE_MI_AVATAR_HEIGHT';
+$modversion['config'][$i]['description'] = '_PROFILE_MI_AVATAR_HEIGHT_DESC';
+$modversion['config'][$i]['formtype'] = 'textbox';
+$modversion['config'][$i]['valuetype'] = 'int';
+$modversion['config'][$i]['default'] = 0;
+$modversion['config'][$i]['category'] = 'settings';
+
+//avatar width
+$i++;
+$modversion['config'][$i]['name'] = 'index_avatar_width';
+$modversion['config'][$i]['title'] = '_PROFILE_MI_AVATAR_WIDTH';
+$modversion['config'][$i]['description'] = '_PROFILE_MI_AVATAR_WIDTH_DESC';
+$modversion['config'][$i]['formtype'] = 'textbox';
+$modversion['config'][$i]['valuetype'] = 'int';
+$modversion['config'][$i]['default'] = 0;
+$modversion['config'][$i]['category'] = 'settings';
 
 // Templates
 
@@ -298,6 +352,9 @@ $modversion['templates'][$i]['description'] = '';
  * End of hack by felix<inbox> for validusdc
  * adding report page
  */
+$i++;
+$modversion['templates'][$i]['file'] = 'smartprofile_userlist.html';
+$modversion['templates'][$i]['description'] = '';
 // About stuff
 $modversion['status_version'] = "Release Candidate";
 $modversion['developer_website_url'] = "http://smartfactory.ca";

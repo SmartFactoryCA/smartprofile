@@ -95,4 +95,15 @@ define("_PROFILE_MI_PAGE_SEARCH", "Search");
 //blocks
 define("_MI_SPROFILE_BLOCK_NEW_MEMBERS", "New members");
 define("_MI_SPROFILE_BLOCK_NEW_MEMBERS_DSC", "Recently subscribed members");
+define("_MI_SPROFILE_PERPAGE", "Users Per Page");
+define("_MI_SPROFILE_PERPAGE_DSC", "");
+define("_MI_SPROFILE_ALL", "All");
+define("_PROFILE_MI_REALNAME", "Display real name on users list");
+define("_PROFILE_MI_REALNAME_DESC", "If you select 'No', user name will be displlayed.");
+define("_PROFILE_MI_AVATAR_INDEX", "Display Avatar in users list");
+define("_PROFILE_MI_AVATAR_INDEX_DESC", "");
+define("_PROFILE_MI_AVATAR_HEIGHT", "Avatar height in users list");
+define("_PROFILE_MI_AVATAR_HEIGHT_DESC", "");
+define("_PROFILE_MI_AVATAR_WIDTH", "Avatar width in users list");
+define("_PROFILE_MI_AVATAR_WIDTH_DESC", "");
 ?>

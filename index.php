@@ -26,11 +26,49 @@
 //  ------------------------------------------------------------------------ //
 
 include '../../mainfile.php';
-
-if ($xoopsUser) {
+/*
+ * Hack by felix for ampersand
+ */
+/*if ($xoopsUser) {
     header('location: userinfo.php?uid='.$xoopsUser->getVar('uid'));
 }
 else {
     header('location: register.php');
+}*/
+include 'header.php';
+$xoopsOption['template_main'] = 'smartprofile_userlist.html';
+include(XOOPS_ROOT_PATH.'/header.php');
+$start = isset($_GET['start']) ? intval($_GET['start']) : 0;
+$member_handler =& xoops_gethandler('member');
+$real_total_items = $member_handler->getUserCount();
+$criteria = new CriteriaCompo();
+$criteria->setStart($start);
+$criteria->setLimit($xoopsModuleConfig['perpage']);
+$usersObj =& $member_handler->getUsers($criteria, true);
+
+$uArray = array();
+if($xoopsModuleConfig['index_avatar'] && $xoopsModuleConfig['index_avatar_height'] && $xoopsModuleConfig['index_avatar_width']){
+	$wh = "width='".$xoopsModuleConfig['index_avatar_width']."' height=".$xoopsModuleConfig['index_avatar_height']."'";
 }
+foreach($usersObj as $uid => $userObj){
+	if($xoopsModuleConfig['index_avatar'] && $userObj->user_avatar() != ''){
+
+		$avatar = "<img ".$wh." src='".XOOPS_URL."/uploads/".$userObj->user_avatar()."'/>";
+		$uArray[$uid]['avatar'] = $avatar;
+		unset($avatar);
+	}
+	if($xoopsModuleConfig['index_real_name']){
+		$uArray[$uid]['uname'] = $userObj->getVar('name') != '' ? $userObj->getVar('name') : $userObj->uname();
+	}else{
+		$uArray[$uid]['uname'] = $userObj->uname();
+	}
+}
+$xoopsTpl->assign('u_array', $uArray);
+$xoopsTpl->assign('avatar', $xoopsModuleConfig['index_avatar']);
+$xoopsTpl->assign('avatar_height', $xoopsModuleConfig['index_avatar_height']);
+$xoopsTpl->assign('avatar_width', $xoopsModuleConfig['index_avatar_width']);
+include_once XOOPS_ROOT_PATH.'/class/pagenav.php';
+$pagenav = new XoopsPageNav($real_total_items, $xoopsModuleConfig['perpage'], $start, 'start', '');
+$xoopsTpl->assign('navbar', '<div style="text-align:right;">' . $pagenav->renderNav() . '</div>');
+include(XOOPS_ROOT_PATH.'/footer.php');
 ?>
