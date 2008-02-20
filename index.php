@@ -39,12 +39,29 @@ include 'header.php';
 $xoopsOption['template_main'] = 'smartprofile_userlist.html';
 include(XOOPS_ROOT_PATH.'/header.php');
 $start = isset($_GET['start']) ? intval($_GET['start']) : 0;
-$member_handler =& xoops_gethandler('member');
-$real_total_items = $member_handler->getUserCount();
+$user_handler =& xoops_getModuleHandler('user', 'smartprofile');
+
 $criteria = new CriteriaCompo();
+if(!(is_object($xoopsUser) && $xoopsUser->isAdmin())){
+	if(is_object($xoopsUser)){
+		$groups = $xoopsUser->getGroups();
+	}else{
+		$groups = array(3);
+	}
+	$allowed_groups = array();
+	foreach($groups as $groupid){
+		if(isset($xoopsModuleConfig['view_group_'.$groupid]) && $xoopsModuleConfig['view_group_'.$groupid][0] != ''){
+			$allowed_groups = array_merge($allowed_groups, $xoopsModuleConfig['view_group_'.$groupid]);
+		}
+	}
+	$allowed_groups = array_unique($allowed_groups);
+	$criteria->add(new Criteria('groupid', '('.implode(', ', $allowed_groups).')', 'IN'));
+}
+$real_total_items = intval($user_handler->getCount($criteria));
+
 $criteria->setStart($start);
 $criteria->setLimit($xoopsModuleConfig['perpage']);
-$usersObj =& $member_handler->getUsers($criteria, true);
+$usersObj =& $user_handler->getObjects($criteria, true);
 
 $uArray = array();
 if($xoopsModuleConfig['index_avatar'] && $xoopsModuleConfig['index_avatar_height'] && $xoopsModuleConfig['index_avatar_width']){
@@ -57,8 +74,10 @@ foreach($usersObj as $uid => $userObj){
 		$uArray[$uid]['avatar'] = $avatar;
 		unset($avatar);
 	}
-	if($xoopsModuleConfig['index_real_name']){
+	if($xoopsModuleConfig['index_real_name'] == 'real'){
 		$uArray[$uid]['uname'] = $userObj->getVar('name') != '' ? $userObj->getVar('name') : $userObj->uname();
+	}elseif($xoopsModuleConfig['index_real_name'] == 'both'){
+		$uArray[$uid]['uname'] = $userObj->getVar('name') != '' ? $userObj->getVar('name').' ('.$userObj->uname().')' : $userObj->uname();
 	}else{
 		$uArray[$uid]['uname'] = $userObj->uname();
 	}
