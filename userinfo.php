@@ -140,8 +140,9 @@ foreach (array_keys($fields) as $i) {
             $value = implode('<br />', array_values($value));
         }
         if($xoopsModuleConfig['show_empty'] || $value){
-            $categories[$catid]['fields'][] = array('title' => $fields[$i]->getVar('field_title'), 'value' => $value);
-            $weights[$catid][] = $fields[$i]->getVar('catid');
+            $categories[$catid]['fields'][$fields[$i]->getVar('field_weight')."_".$i] = array('title' => $fields[$i]->getVar('field_title'), 'value' => $value);
+           	ksort($categories[$catid]['fields']);
+           	$weights[$catid][] = $fields[$i]->getVar('catid');
         }
     }
 }
