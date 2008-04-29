@@ -230,6 +230,7 @@ switch($op) {
         $obj->setVar('field_weight', $_REQUEST['field_weight']);
         $obj->setVar('catid', $_REQUEST['field_category']);
     }
+    $obj->setVar('exportable', $_REQUEST['exportable']);
     if ($obj->getVar('field_edit') && isset($_REQUEST['step_id'])) {
         $obj->setVar('step_id', $_REQUEST['step_id']);
     }

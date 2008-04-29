@@ -40,6 +40,9 @@ $adminmenu[4]['title'] = _PROFILE_MI_STEPS;
 $adminmenu[4]['link'] = "admin/step.php";
 $adminmenu[5]['title'] = _PROFILE_MI_PERMISSIONS;
 $adminmenu[5]['link'] = "admin/permissions.php";
+$adminmenu[6]['title'] = _PROFILE_MI_FINDUSER;
+$adminmenu[6]['link'] = "admin/finduser.php";
+
 
 if (isset($xoopsModule)) {
 

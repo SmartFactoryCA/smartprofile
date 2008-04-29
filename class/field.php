@@ -51,6 +51,7 @@ class SmartProfileField extends SmartObject {
         $this->initVar('field_notnull', XOBJ_DTYPE_INT, 1);
         $this->initVar('field_edit', XOBJ_DTYPE_INT, 0);
         $this->initVar('field_show', XOBJ_DTYPE_INT, 0);
+        $this->initVar('exportable', XOBJ_DTYPE_INT, 0);
         $this->initVar('field_config', XOBJ_DTYPE_INT, 0);
         $this->initVar('field_options', XOBJ_DTYPE_ARRAY, array());
         $this->initVar('step_id', XOBJ_DTYPE_INT, 0);

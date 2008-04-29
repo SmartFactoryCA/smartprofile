@@ -216,6 +216,8 @@ function getFieldForm(&$field, $action = false) {
         else {
             $editable_groups = array();
         }
+         $form->addElement(new XoopsFormRadioYN(_PROFILE_AM_EXPORTABLE, 'exportable', $field->getVar('exportable', 'e')));
+
         $form->addElement(new XoopsFormSelectGroup(_PROFILE_AM_PROF_EDITABLE, 'smartprofile_edit', false, $editable_groups, 5, true));
         $form->addElement(new XoopsFormRadioYN(_PROFILE_AM_REQUIRED, 'field_required', $field->getVar('field_required', 'e')));
         $regstep_select = new XoopsFormSelect(_PROFILE_AM_PROF_REGISTER, 'step_id', $field->getVar('step_id', 'e'));

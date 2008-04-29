@@ -15,6 +15,7 @@ define("_PROFILE_MI_FIELDS", "Fields");
 define("_PROFILE_MI_USERS", "Users");
 define("_PROFILE_MI_STEPS", "Registration Steps");
 define("_PROFILE_MI_PERMISSIONS", "Permissions");
+define("_PROFILE_MI_FINDUSER", "Find Users");
 
 //User Profile Category
 define("_PROFILE_MI_CATEGORY_TITLE", "User Profile");

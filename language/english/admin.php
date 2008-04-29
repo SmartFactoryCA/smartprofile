@@ -37,6 +37,7 @@ define("_PROFILE_AM_PROF_VISIBLE", "Visibility");
 define("_PROFILE_AM_PROF_EDITABLE", "Field editable from profile");
 define("_PROFILE_AM_PROF_REGISTER", "Show in registration form");
 define("_PROFILE_AM_PROF_SEARCH", "Searchable by these groups");
+define("_PROFILE_AM_EXPORTABLE", "Exportable");
 
 define("_PROFILE_AM_FIELDVISIBLE", "The field ");
 define("_PROFILE_AM_FIELDVISIBLEFOR", " is visible for ");
@@ -134,4 +135,12 @@ define("_PROFILE_AM_STEPINTRO", "Step description");
 define("_PROFILE_AM_MAXWIDTH", "Max width (px)");
 define("_PROFILE_AM_MAXHEIGHT", "Max height (px)");
 define("_PROFILE_AM_MAXSIZE", "Max file size (KB)");
+
+//Find user
+define("_AM_SPROFILE_FINDUSER_CRIT", "%s contains:");
+define("_AM_SPROFILE_FINDUSER", "Find Users");
+define("_AM_SPROFILE_UNAME", "Username");
+define("_AM_SPROFILE_UID", "Userid");
+define("_AM_SPROFILE_BACK_TO_FORM", "<< Back to search form");
+define("_AM_SPROFILE_EXPORT_ALL", "Export all matching users");
 ?>
