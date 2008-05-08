@@ -37,7 +37,8 @@ class SmartProfileSmartuser extends SmartObject {
 	  function SmartProfileSmartuser(&$handler) {
     	//ini_set('memory_limit','32M');
 		$this->initNonPersistableVar('uid', XOBJ_DTYPE_INT, false, "_AM_SPROFILE_UID");
-		$this->initNonPersistableVar('uname', XOBJ_DTYPE_INT, false, "_AM_SPROFILE_UNAME");
+		$this->initNonPersistableVar('uname', XOBJ_DTYPE_TXTBOX, false, "_AM_SPROFILE_UNAME");
+		$this->initNonPersistableVar('email', XOBJ_DTYPE_TXTBOX, false, "_AM_SPROFILE_EMAIL");
 
     	$this->SmartObject($handler);
     	$fields =& $this->handler->getFields();
@@ -51,6 +52,9 @@ class SmartProfileSmartuser extends SmartObject {
     	return "<a href='".XOOPS_URL."/modules/smartprofile/userinfo.php?uid=".$this->getVar('uid')."'>".$this->getVar('uname')."</a>";
     }
 
+	function getUserEail(){
+    	return "<a href='mailto:".$this->getVar('email')."'>".$this->getVar('email')."</a>";
+    }
 
 }
 class SmartProfileSmartuserHandler extends SmartPersistableObjectHandler {

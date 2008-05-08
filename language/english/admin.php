@@ -141,6 +141,7 @@ define("_AM_SPROFILE_FINDUSER_CRIT", "%s contains:");
 define("_AM_SPROFILE_FINDUSER", "Find Users");
 define("_AM_SPROFILE_UNAME", "Username");
 define("_AM_SPROFILE_UID", "Userid");
+define("_AM_SPROFILE_EMAIL", "Email");
 define("_AM_SPROFILE_BACK_TO_FORM", "<< Back to search form");
 define("_AM_SPROFILE_EXPORT_ALL", "Export all matching users");
 ?>

@@ -7,6 +7,7 @@
     *
     * @return object
     */
+
 function getFieldForm(&$field, $action = false) {
     if ($action === false) {
         $action = $_SERVER['REQUEST_URI'];

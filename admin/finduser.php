@@ -15,7 +15,7 @@ switch ($op) {
     		}
     	}
 
-		xoops_cp_header();
+		//xoops_cp_header();
 		smart_xoops_cp_header();
 		smart_adminMenu(6, _AM_SPROFILE_FINDUSER);
 
@@ -28,6 +28,7 @@ switch ($op) {
 
 		$custom_fields = $smartprofile_smartuser_handler->getFields();
 		$objectTable->addColumn(new SmartObjectColumn('uname', 'center', 100, 'getUserLink',  false,_AM_SPROFILE_UNAME));
+		$objectTable->addColumn(new SmartObjectColumn('email', 'center', 100, 'getUserEail',  false,_AM_SPROFILE_EMAIL));
 
 		foreach($custom_fields as $key => $custom_field){
 			if(!in_array($key, $hidden_fields_results)){
@@ -116,9 +117,9 @@ switch ($op) {
 	default:
 		include_once XOOPS_ROOT_PATH."/modules/smartprofile/class/smartuser.php";
 		include_once XOOPS_ROOT_PATH . '/class/xoopsformloader.php';
-		xoops_cp_header();
+		//xoops_cp_header();
 		smart_xoops_cp_header();
-		smart_adminMenu(6, _AM_SCAREER_FINDUSER);
+		smart_adminMenu(6, _AM_SPROFILE_FINDUSER);
 
  		$custom_fields = $smartprofile_smartuser_handler->getFields();
 
