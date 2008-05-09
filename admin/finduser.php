@@ -9,6 +9,12 @@ switch ($op) {
 		include_once XOOPS_ROOT_PATH."/modules/smartprofile/class/smartuser.php";
  		$fields =& $smartprofile_smartuser_handler->getFields();
 		$criteria = new CriteriaCompo();
+		if($_REQUEST['uname'] != ''){
+			$criteria->add(new Criteria('uname', '%'.$_REQUEST['uname'].'%', 'LIKE'));
+		}
+		if($_REQUEST['email'] != ''){
+			$criteria->add(new Criteria('email', '%'.$_REQUEST['email'].'%', 'LIKE'));
+		}
 		foreach($fields as $key =>$field){
     		if(isset($_REQUEST[$key]) && $_REQUEST[$key] != ''){
     			$criteria->add(new Criteria($key, '%'.$_REQUEST[$key].'%', 'LIKE'));
@@ -130,6 +136,10 @@ switch ($op) {
 			}
 		}
 		$sform = new XoopsThemeForm(_AM_SPROFILE_FINDUSER, "op", xoops_getenv('PHP_SELF'), 'get');
+		$uname_elt = new XoopsFormText(sprintf(_AM_SPROFILE_FINDUSER_CRIT, _AM_SPROFILE_UNAME), 'uname', 50, 255, '');
+	    $sform->addElement($uname_elt);
+	    $email_elt = new XoopsFormText(sprintf(_AM_SPROFILE_FINDUSER_CRIT, _AM_SPROFILE_EMAIL), 'email', 50, 255, '');
+	    $sform->addElement($email_elt);
 		foreach($custom_fields as $key =>$field){
     		if(!in_array($key, $hidden_fields_form)){
 	    		$elt = new XoopsFormText(sprintf(_AM_SPROFILE_FINDUSER_CRIT, $field->getVar('field_title')), $key, 50, 255, '');

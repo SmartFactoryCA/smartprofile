@@ -424,7 +424,7 @@ class SmartProfileFieldHandler extends SmartPersistableObjectHandler {
         if (!empty($force_update) || count($fields) == 0) {
             $criteria = new Criteria('fieldid', 0, "!=");
             $criteria->setSort('field_weight');
-            $field_objs = $this->getObjects(null);
+            $field_objs = $this->getObjects($criteria);
             foreach (array_keys($field_objs) as $i) {
                 $fields[$field_objs[$i]->getVar('field_name')] = $field_objs[$i];
             }
