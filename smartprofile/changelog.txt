@@ -1,0 +1,41 @@
+<b><u>=> Version 1.03 </u></b>
+- Fixed Bug #4588 - Change E-mail (Mboyden/Mithrandir)
+- Fixed Bug #4589 - Edituser Loses Username (Mboyden/Mithrandir)
+- Fixed Bug #4591 - Reg Form - Passwords Not Verified (Mboyden/Mithrandir)
+- Fixed Bug #4592 - Reg Form - Required Field Verification Fails (Mboyden/Mithrandir)
+- Fixed Bug #4593 - No Activation Key Sent (Mboyden/Mithrandir)
+- Fixed Bug #4595 - Reg Form - Defaults Not Loaded (Mboyden/Mithrandir)
+- Fixed Bug #4596 - Registration - Blank Screen (Mboyden/Mithrandir)
+- Fixed Bug #4602 - Fields - Date Values Restricted to 1970 or Later (Mboyden/Mithrandir)
+- Fixed Bug #4607 - Change Pass - Malformed Redirect URL (Mboyden/Mithrandir)
+- Fixed Bug #4608 - Change Email - Email Duplicates Allowed for Users (Mboyden/Mithrandir)
+
+<b><u>=> Version 1.02 </u></b>
+- Compatibility with PHP 4 reinstated (Skalpa/Mithrandir)
+- Fixed Bug with visibility of fields to certain groups only (TheFinni/Mithrandir)
+- Fixed Bug where the activation key would be generated too long (Mithrandir)
+- Fixed Bug #4435 - errors on registration (using regstep) (Vaughan/Mithrandir)
+- Fixed Bug #4441 - bug on userinfo page (avatar section) (Vaughan/Mithrandir)
+- Fixed Bug #4440 - Errors editing user (admin & userside) (Vaughan/Mithrandir)
+- Disclaimer now only visible on first registration page (Akitson/Mithrandir)
+- Added avatar button (Vaughan/Mithrandir)
+- Added module preference for displaying profile fields with empty values or not (Jilong/Mithrandir)
+- Tweaked layout (should be moved to CSS soon) (Mithrandir)
+- Added photo/image field type (Mithrandir)
+- Cleaned up some unused language constants and added others to the install script (Mithrandir)
+
+<b><u>=> Version 1.0 </u></b>
+- Removed the "Allow to view account" feature as it only caused problems for anonymous
+- Register.php now requires a registration step in the database or it will redirect to the front page
+- Removed avatar preferences as they were duplicates of core
+
+<b><u>=> Version 0.2 </u></b>
+
+- Modified to allow the core to be independent of this module
+- Changed visibility management to allow for more granular permissions on profiles
+
+<b><u>=> Version 0.1 (2005)</u></b>
+
+- Developed for XOOPS 2.2 to replace core user management
+
+$Id: changelog.txt,v 1.7 2007/06/11 10:03:49 mithyt2 Exp $

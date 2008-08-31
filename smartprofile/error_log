@@ -1,0 +1,112 @@
+[25-Sep-2007 22:03:30] PHP Notice:  Undefined variable: xoopsUser in /home/thenoise/public_html/tap/modules/smartfaq/class/faq.php on line 971
+[25-Sep-2007 22:03:30] PHP Notice:  Only variable references should be returned by reference in /home/thenoise/public_html/tap/modules/smartfaq/class/faq.php on line 733
+[25-Sep-2007 22:03:30] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:03:30] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:03:30] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:03:30] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:03:30] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:03:30] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:03:30] PHP Notice:  Undefined variable: where in /home/thenoise/public_html/tap/modules/osC/includes/search.inc.php on line 35
+[25-Sep-2007 22:09:33] PHP Notice:  Undefined variable: xoopsUser in /home/thenoise/public_html/tap/modules/smartfaq/class/faq.php on line 971
+[25-Sep-2007 22:09:33] PHP Notice:  Only variable references should be returned by reference in /home/thenoise/public_html/tap/modules/smartfaq/class/faq.php on line 733
+[25-Sep-2007 22:09:33] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:09:33] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:09:33] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:09:33] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:09:33] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:09:33] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:09:34] PHP Notice:  Undefined variable: where in /home/thenoise/public_html/tap/modules/osC/includes/search.inc.php on line 35
+[25-Sep-2007 22:14:34] PHP Notice:  Undefined variable: xoopsUser in /home/thenoise/public_html/tap/modules/smartfaq/class/faq.php on line 971
+[25-Sep-2007 22:14:34] PHP Notice:  Only variable references should be returned by reference in /home/thenoise/public_html/tap/modules/smartfaq/class/faq.php on line 733
+[25-Sep-2007 22:14:34] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:14:34] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:14:34] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:14:34] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:14:34] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:14:34] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:14:34] PHP Notice:  Undefined variable: where in /home/thenoise/public_html/tap/modules/osC/includes/search.inc.php on line 35
+[25-Sep-2007 22:14:59] PHP Warning:  Invalid argument supplied for foreach() in /home/thenoise/public_html/tap/modules/isearch/class/blacklist.php on line 95
+[25-Sep-2007 22:16:44] PHP Warning:  Invalid argument supplied for foreach() in /home/thenoise/public_html/tap/modules/isearch/class/blacklist.php on line 95
+[25-Sep-2007 22:16:56] PHP Warning:  Invalid argument supplied for foreach() in /home/thenoise/public_html/tap/modules/isearch/class/blacklist.php on line 95
+[25-Sep-2007 22:17:10] PHP Warning:  Invalid argument supplied for foreach() in /home/thenoise/public_html/tap/modules/isearch/class/blacklist.php on line 95
+[25-Sep-2007 22:17:20] PHP Warning:  Invalid argument supplied for foreach() in /home/thenoise/public_html/tap/modules/isearch/class/blacklist.php on line 95
+[25-Sep-2007 22:18:25] PHP Warning:  Invalid argument supplied for foreach() in /home/thenoise/public_html/tap/modules/isearch/class/blacklist.php on line 95
+[25-Sep-2007 22:19:52] PHP Notice:  Undefined variable: xoopsUser in /home/thenoise/public_html/tap/modules/smartfaq/class/faq.php on line 971
+[25-Sep-2007 22:19:52] PHP Notice:  Only variable references should be returned by reference in /home/thenoise/public_html/tap/modules/smartfaq/class/faq.php on line 733
+[25-Sep-2007 22:19:53] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:19:53] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:19:53] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:19:53] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:19:53] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:19:53] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[25-Sep-2007 22:19:53] PHP Notice:  Undefined variable: where in /home/thenoise/public_html/tap/modules/osC/includes/search.inc.php on line 35
+[25-Sep-2007 22:21:00] PHP Warning:  Invalid argument supplied for foreach() in /home/thenoise/public_html/tap/modules/isearch/class/blacklist.php on line 95
+[26-Sep-2007 03:23:31] PHP Notice:  Undefined variable: xoopsUser in /home/thenoise/public_html/tap/modules/smartfaq/class/faq.php on line 971
+[26-Sep-2007 03:23:31] PHP Notice:  Only variable references should be returned by reference in /home/thenoise/public_html/tap/modules/smartfaq/class/faq.php on line 733
+[26-Sep-2007 03:23:36] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[26-Sep-2007 03:23:37] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[26-Sep-2007 03:23:37] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[26-Sep-2007 03:23:37] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[26-Sep-2007 03:23:37] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[26-Sep-2007 03:23:37] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[26-Sep-2007 04:28:00] PHP Parse error:  syntax error, unexpected '^' in /home/thenoise/public_html/tap/modules/smartprofile/language/english/main.php on line 71
+[26-Sep-2007 04:29:17] PHP Notice:  Constant _CO_SOBJECT_WARNING_BETA already defined in /home/thenoise/public_html/tap/modules/smartobject/language/english/common.php on line 151
+[26-Sep-2007 04:29:17] PHP Notice:  Constant _CO_SOBJECT_WARNING_FINAL already defined in /home/thenoise/public_html/tap/modules/smartobject/language/english/common.php on line 152
+[26-Sep-2007 04:29:17] PHP Notice:  Constant _CO_SOBJECT_WARNING_RC already defined in /home/thenoise/public_html/tap/modules/smartobject/language/english/common.php on line 153
+[26-Sep-2007 04:29:17] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[26-Sep-2007 04:29:17] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[26-Sep-2007 04:29:17] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[26-Sep-2007 04:29:17] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[26-Sep-2007 04:29:17] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[26-Sep-2007 04:29:17] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[26-Sep-2007 04:29:18] PHP Notice:  Undefined variable: where in /home/thenoise/public_html/tap/modules/osC/includes/search.inc.php on line 35
+[26-Sep-2007 04:29:19] PHP Warning:  Invalid argument supplied for foreach() in /home/thenoise/public_html/tap/modules/isearch/class/blacklist.php on line 95
+[03-Oct-2007 23:29:57] PHP Parse error:  syntax error, unexpected '<' in /home/thenoise/public_html/tap/modules/smartprofile/language/english/main.php on line 161
+[03-Oct-2007 23:30:45] PHP Notice:  Constant _CO_SOBJECT_WARNING_BETA already defined in /home/thenoise/public_html/tap/modules/smartobject/language/english/common.php on line 151
+[03-Oct-2007 23:30:45] PHP Notice:  Constant _CO_SOBJECT_WARNING_FINAL already defined in /home/thenoise/public_html/tap/modules/smartobject/language/english/common.php on line 152
+[03-Oct-2007 23:30:45] PHP Notice:  Constant _CO_SOBJECT_WARNING_RC already defined in /home/thenoise/public_html/tap/modules/smartobject/language/english/common.php on line 153
+[03-Oct-2007 23:30:46] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:30:47] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:30:47] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:30:47] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:30:47] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:30:47] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:30:48] PHP Notice:  Undefined variable: where in /home/thenoise/public_html/tap/modules/osC/includes/search.inc.php on line 35
+[03-Oct-2007 23:30:49] PHP Warning:  Invalid argument supplied for foreach() in /home/thenoise/public_html/tap/modules/isearch/class/blacklist.php on line 95
+[03-Oct-2007 23:38:54] PHP Notice:  Constant _CO_SOBJECT_WARNING_BETA already defined in /home/thenoise/public_html/tap/modules/smartobject/language/english/common.php on line 151
+[03-Oct-2007 23:38:54] PHP Notice:  Constant _CO_SOBJECT_WARNING_FINAL already defined in /home/thenoise/public_html/tap/modules/smartobject/language/english/common.php on line 152
+[03-Oct-2007 23:38:54] PHP Notice:  Constant _CO_SOBJECT_WARNING_RC already defined in /home/thenoise/public_html/tap/modules/smartobject/language/english/common.php on line 153
+[03-Oct-2007 23:38:55] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:38:55] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:38:55] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:38:55] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:38:55] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:38:55] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:38:56] PHP Notice:  Undefined variable: where in /home/thenoise/public_html/tap/modules/osC/includes/search.inc.php on line 35
+[03-Oct-2007 23:38:58] PHP Warning:  Invalid argument supplied for foreach() in /home/thenoise/public_html/tap/modules/isearch/class/blacklist.php on line 95
+[03-Oct-2007 23:42:23] PHP Warning:  Invalid argument supplied for foreach() in /home/thenoise/public_html/tap/modules/isearch/class/blacklist.php on line 95
+[03-Oct-2007 23:43:19] PHP Warning:  Invalid argument supplied for foreach() in /home/thenoise/public_html/tap/modules/isearch/class/blacklist.php on line 95
+[03-Oct-2007 23:43:33] PHP Warning:  Invalid argument supplied for foreach() in /home/thenoise/public_html/tap/modules/isearch/class/blacklist.php on line 95
+[03-Oct-2007 23:43:42] PHP Warning:  Invalid argument supplied for foreach() in /home/thenoise/public_html/tap/modules/isearch/class/blacklist.php on line 95
+[03-Oct-2007 23:43:54] PHP Notice:  Constant _CO_SOBJECT_WARNING_BETA already defined in /home/thenoise/public_html/tap/modules/smartobject/language/english/common.php on line 151
+[03-Oct-2007 23:43:54] PHP Notice:  Constant _CO_SOBJECT_WARNING_FINAL already defined in /home/thenoise/public_html/tap/modules/smartobject/language/english/common.php on line 152
+[03-Oct-2007 23:43:54] PHP Notice:  Constant _CO_SOBJECT_WARNING_RC already defined in /home/thenoise/public_html/tap/modules/smartobject/language/english/common.php on line 153
+[03-Oct-2007 23:43:54] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:43:54] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:43:54] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:43:54] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:43:54] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:43:54] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:43:54] PHP Notice:  Undefined variable: where in /home/thenoise/public_html/tap/modules/osC/includes/search.inc.php on line 35
+[03-Oct-2007 23:43:55] PHP Warning:  Invalid argument supplied for foreach() in /home/thenoise/public_html/tap/modules/isearch/class/blacklist.php on line 95
+[03-Oct-2007 23:44:03] PHP Warning:  Invalid argument supplied for foreach() in /home/thenoise/public_html/tap/modules/isearch/class/blacklist.php on line 95
+[03-Oct-2007 23:49:49] PHP Notice:  Undefined variable: xoopsUser in /home/thenoise/public_html/tap/modules/smartfaq/class/faq.php on line 971
+[03-Oct-2007 23:49:49] PHP Notice:  Only variable references should be returned by reference in /home/thenoise/public_html/tap/modules/smartfaq/class/faq.php on line 733
+[03-Oct-2007 23:49:49] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:49:50] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:49:50] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:49:50] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:49:50] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:49:50] PHP Notice:  Undefined index:  seo_mode in /home/thenoise/public_html/tap/modules/smartobject/include/functions.php on line 104
+[03-Oct-2007 23:49:50] PHP Notice:  Undefined variable: where in /home/thenoise/public_html/tap/modules/osC/includes/search.inc.php on line 35
+[26-Jan-2008 00:41:36] PHP Warning:  Invalid argument supplied for foreach() in /home/thenoise/public_html/xoops/modules/isearch/class/blacklist.php on line 95

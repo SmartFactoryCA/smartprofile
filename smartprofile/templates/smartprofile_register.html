@@ -1,0 +1,60 @@
+<{if count($steps) > 1}>
+    <div>
+        <{foreach item=step from=$steps key=stepno name=steploop}>
+            <{if $stepno < $current_step}>
+                <em>
+            <{elseif $stepno == $current_step}>
+                <strong>
+            <{/if}>
+
+            <{$step.step_name}>
+
+            <{if $stepno < $current_step}>
+                </em>
+            <{elseif $stepno == $current_step}>
+                </strong>
+            <{/if}>
+            <{if !$smarty.foreach.steploop.last}>
+                &nbsp;&raquo;
+            <{/if}>
+            <{if !$smarty.foreach.steploop.last}>
+                &nbsp;&raquo;
+            <{/if}>
+        <{/foreach}>
+    </div>
+<{/if}>
+
+<{if $stop}>
+    <div class='errorMsg'><{$stop}></div>
+    <br clear='both'>
+<{/if}>
+
+<{if $confirm}>
+    <{foreach item=msg from=$confirm}>
+        <div class='confirmMsg'><{$msg}></div>
+        <br clear='both'>
+    <{/foreach}>
+<{/if}>
+
+<{if $regform}>
+    <{$regform.javascript}>
+    <h1><{$regform.title}></h1>
+    <form id="<{$regform.name}>" name="<{$regform.name}>" action="<{$regform.action}>" method="<{$regform.method}>" <{$regform.extra}> >
+        <table>
+            <{foreach item=element from=$regform.elements name=eleloop}>
+                <{if !$element.hidden}>
+                    <tr>
+                        <th><{if $element.required}><span class="form_required">* </span><{/if}><strong><{$element.caption}></strong><{if $element.description != ""}><br /><{$element.description}><{/if}></th>
+                        <td class="<{cycle values='odd, even'}>"><{$element.body}></td>
+                    </tr>
+                <{/if}>
+            <{/foreach}>
+        </table>
+        <{if $regform.requiredcount > 0}><div>* = <{$smarty.const._PROFILE_MA_REQUIRED}></div><{/if}>
+        <{foreach item=element from=$regform.elements}>
+            <{if $element.hidden}>
+                <{$element.body}>
+            <{/if}>
+        <{/foreach}>
+    </form>
+<{/if}>

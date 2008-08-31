@@ -1,0 +1,78 @@
+<div class="breadcrumbs">
+<{if $email}>
+	<a href="<{$user_pmlink}>"><img src="<{$xoops_url}>/modules/smartprofile/images/pm.gif" width="26" height="20" alt="<{$user_pmlink_imgsrc_alttxt}>" align="left"><{$email}></a>
+<{else}>
+	<a href="<{$user_pmlink}>"><img src="<{$xoops_url}>/modules/smartprofile/images/pm.gif" width="26" height="20" alt="<{$user_pmlink_imgsrc_alttxt}>"></a>
+<{/if}>
+<{if $user_ownpage == true}>
+	<{if $user_changeemail}>
+	| <a href="<{$xoops_url}>/modules/smartprofile/changemail.php"><{$smarty.const._PROFILE_MA_CHANGEMAIL}></a>
+	<{/if}>
+	| <a href="<{$xoops_url}>/modules/smartprofile/changepass.php"><{$lang_changepassword}></a>
+	| <a href="<{$xoops_url}>/edituser.php?op=avatarform"><{$lang_avatar}></a>
+	| <a href="<{$xoops_url}>/modules/smartprofile/edituser.php"><{$lang_editprofile}></a>
+	<{if $user_candelete == true}>
+	| <a href="<{$xoops_url}>/modules/smartprofile/edituser.php?op=delete"><{$smarty.const._PROFILE_MA_DELACCOUNT}></a>
+	<{/if}>
+<{elseif $xoops_isadmin != false}>
+	| <a href="<{$xoops_url}>/modules/smartprofile/admin/user.php?op=edit&id=<{$user_uid}>"><{$lang_editprofile}></a>
+	<{if $userlevel == 1}>
+	| <a href="<{$xoops_url}>/modules/smartprofile/admin/deactivate.php?uid=<{$user_uid}>&level=0"><{$smarty.const._PROFILE_MA_DEACTIVATE}></a>
+	<{else}>
+	| <a href="<{$xoops_url}>/modules/smartprofile/admin/deactivate.php?uid=<{$user_uid}>&level=1"><{$smarty.const._PROFILE_MA_ACTIVATE}></a>
+	<{/if}>
+	| <a href="<{$xoops_url}>/modules/smartprofile/admin/user.php?op=delete&id=<{$user_uid}>"><{$smarty.const._PROFILE_MA_DELACCOUNT}></a>
+<{/if}>
+</div>
+
+<div class="title">
+<{if $avatar}>
+	<img src="<{$avatar}>" alt="<{$name}>" align="right" />
+<{/if}>
+	<h1><{$name}>
+<{if $xoops_isadmin != false}>
+		(<{$uname}>)
+<{/if}>
+	</h1>
+<div style="clear:both;"></div>
+</div>
+<{counter assign=catcount print=false}>
+<{foreach item=category from=$categories}>
+    <{if isset($category.fields)}>
+        <{counter}>
+        <div style="width: 48%; float: left; padding: 0px 5px 10px 0px;<{if $catcount % 2 == 0}> clear: left;<{/if}>">
+            <table class="outer" cellpadding="4" cellspacing="1">
+                <tr>
+                  <th colspan="2" align="center"><{$category.cat_title}></th>
+                </tr>
+                <{foreach item=field from=$category.fields}>
+                    <tr>
+                        <td class="head"><{$field.title}></td>
+                        <td class="even"><{$field.value}></td>
+                    </tr>
+                <{/foreach}>
+            </table>
+        </div>
+    <{/if}>
+<{/foreach}>
+
+<{if $modules}>
+    <br style="clear: both;"/>
+    <!-- start module search results loop -->
+    <{foreach item=module from=$modules}>
+
+    <h4><{$module.name}></h4>
+
+      <!-- start results item loop -->
+          <{foreach item=result from=$module.results}>
+
+          <img src="<{$result.image}>" alt="<{$module.name}>" />&nbsp;<b><a href="<{$result.link}>"><{$result.title}></a></b><br /><small>(<{$result.time}>)</small><br />
+
+          <{/foreach}>
+          <!-- end results item loop -->
+
+    <{$module.showall_link}>
+
+    <{/foreach}>
+    <!-- end module search results loop -->
+<{/if}>
